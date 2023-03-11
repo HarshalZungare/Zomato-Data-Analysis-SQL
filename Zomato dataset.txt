@@ -1,0 +1,65 @@
+CREATE TABLE ORDERS(user_id number,
+                    Order_Date date,
+                    Item_id number);
+
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (1,to_date('19-04-17','DD-MM-RR'),2);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (3,to_date('18-12-19','DD-MM-RR'),1);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (2,to_date('20-07-20','DD-MM-RR'),3);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (4,to_date('23-10-19','DD-MM-RR'),4);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (1,to_date('19-03-18','DD-MM-RR'),5);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (7,to_date('20-12-16','DD-MM-RR'),6);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (1,to_date('09-11-16','DD-MM-RR'),7);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (10,to_date('20-05-16','DD-MM-RR'),8);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (8,to_date('24-09-17','DD-MM-RR'),1);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (1,to_date('11-03-17','DD-MM-RR'),2);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (1,to_date('11-03-16','DD-MM-RR'),4);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (5,to_date('10-11-16','DD-MM-RR'),1);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (8,to_date('07-12-17','DD-MM-RR'),5);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (6,to_date('15-12-16','DD-MM-RR'),2);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (2,to_date('08-11-17','DD-MM-RR'),2);
+Insert into ORDERS (USER_ID,ORDER_DATE,ITEM_ID) values (9,to_date('10-09-18','DD-MM-RR'),7);
+
+
+CREATE TABLE ITEM (ITEM_ID NUMBER, 
+	ITEM_NAME VARCHAR2(50), 
+	ITEM_PRICE NUMBER);
+
+
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (1,'Biryani',200);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (2,'Veg pulao',150);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (3,'Veg thali',120);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (4,'Zhunka bhakar',120);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (5,'Bun maska',120);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (6,'Black current cake',120);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (7,'Shahi Panner',120);
+Insert into ITEM (ITEM_ID,ITEM_NAME,ITEM_PRICE) values (8,'Phulka roti',120);
+
+
+CREATE TABLE USERS(USER_ID NUMBER, 
+	USER_FIRST_NAME VARCHAR2(50), 
+	USER_LAST_NAME VARCHAR2(50), 
+	SIGNUP_DATE DATE);
+
+
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (1,'Shubham','Sharma',to_date('02-09-14','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (2,'Rocky','Singh',to_date('15-01-15','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (4,'Shakti','Bajwa',to_date('11-04-14','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (5,'Shakti','Mohan',to_date('01-05-12','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (6,'Aparshakti','Khurrana',to_date('23-12-15','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (7,'Varun','Sisodiya',to_date('16-01-16','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (8,'Victor','Sanchez',to_date('07-04-13','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (9,'Pablo','Escobar',to_date('15-10-14','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (10,'Hemant','Raheja',to_date('11-04-14','DD-MM-RR'));
+Insert into USERS (USER_ID,USER_FIRST_NAME,USER_LAST_NAME,SIGNUP_DATE) values (11,'Dustin','Luis',to_date('11-04-14','DD-MM-RR'));
+
+
+CREATE TABLE GOLD_USERS(USER_ID NUMBER, 
+	MEMBERSHIP_SIGNUP_DATE DATE);
+
+
+Insert into GOLD_USERS (USER_ID,MEMBERSHIP_SIGNUP_DATE) values (1,to_date('22-09-17','DD-MM-RR'));
+Insert into GOLD_USERS (USER_ID,MEMBERSHIP_SIGNUP_DATE) values (3,to_date('21-04-17','DD-MM-RR'));
+Insert into GOLD_USERS (USER_ID,MEMBERSHIP_SIGNUP_DATE) values (6,to_date('22-09-17','DD-MM-RR'));
+Insert into GOLD_USERS (USER_ID,MEMBERSHIP_SIGNUP_DATE) values (4,to_date('21-04-17','DD-MM-RR'));
+
+

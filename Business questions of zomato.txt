@@ -1,0 +1,16 @@
+1. What is the total amount each customer spent on zomato?
+2. How many days each customer visited zomato?
+3. What was the first item purchased by each customer?
+4. Which is the most purchase item on the menu and how many times was it purchased by all the    customer?
+5. Which item was the most popular fo each customer?
+6. Which item was first purchased by the customer after becoming the gold member?
+7. Which item was purchased by customer before becoming the member?
+8. What is the total order and amount spent by each customer befor they become a gold user member?
+9. If buying each product generate points for example 5 Rs = 2 zomato point 
+   and each product has different purchasing points 
+   for example for p1 and p3 5rs = 1 zomato point for p2 10 Rs = 5 zomato point.
+10.In the first one year after customer joins the gold program (including there joining date)
+   irresepective of what the customer has purchased they earn 5 zomato points for every 10 Rs    spent who earned more and what was their points earning in the first year.
+11. Rank all the transaction of cutomer.
+12. Rank all the transaction for each member whenever they are a zomato gold member
+    for every non gold member transaction mark as Na
